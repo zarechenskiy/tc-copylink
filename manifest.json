@@ -1,0 +1,17 @@
+
+{
+  "manifest_version": 1,
+  "name": "TC copylink",
+  "version": "1.0",
+  "description": "Replaces '$' with '.' when you invoke copylink action",
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://buildserver.labs.intellij.net/*"
+      ]
+    }
+  ]
+}
